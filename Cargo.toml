@@ -1,0 +1,17 @@
+[package]
+name = "Project-1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+avr-device = "0.8.0"
+embedded-hal = "1.0.0"
+panic-halt = "1.0.0"
+ufmt = "0.2"
+
+[profile.release]
+opt-level = "s"
+lto = true
+
+[profile.dev]
+opt-level = "s"
